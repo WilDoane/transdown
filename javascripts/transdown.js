@@ -1,17 +1,17 @@
-var Transdown = {
+var Transdown = function () {
 
-    updatePreviewAfterEachKeypress: function () {
+    this.updatePreviewAfterEachKeypress = function () {
         $('#text-to-transdownify').keyup(renderTranscriptPreview);
     },
     
-    renderTranscriptPreview: function () {
+    this.renderTranscriptPreview = function () {
         var textToTransdownify = document.getElementById('text-to-transdownify').value,
             outputText = transdownify(textToTransdownify);
         document.getElementById('live-preview').innerHTML = outputText;
         console.log("render");
     },
     
-    transdownify: function (text) {
+    this.transdownify = function (text) {
         return (text);
     }
 
