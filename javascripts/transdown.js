@@ -1,7 +1,7 @@
 var Transdown = {
 
     updatePreviewAfterEachKeypress = function () {
-        $('#text-to-transdownify').keyup(transdown.renderTranscriptPreview);
+        $('#text-to-transdownify').keyup(renderTranscriptPreview);
     },
     
     renderTranscriptPreview = function () {
